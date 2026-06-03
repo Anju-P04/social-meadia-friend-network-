@@ -1,0 +1,77 @@
+============================================================
+   MICRO-LEVEL SOCIAL NETWORK ANALYSIS REPORT
+============================================================
+
+[1] NETWORK OVERVIEW
+  Total Users (Nodes) : 8
+  Total Friendships   : 11
+  Network Density     : 0.3929
+  Average Degree      : 2.75
+
+[2] DEGREE CENTRALITY (Most Connected Users)
+  Alice      0.4286
+  Bob        0.4286
+  Charlie    0.4286
+  David      0.4286
+  Eve        0.4286
+  Frank      0.4286
+  Grace      0.2857
+  Henry      0.2857
+
+[3] CLUSTERING COEFFICIENT (Friend Group Tightness)
+  Alice      0.3333
+  Bob        0.3333
+  Charlie    0.3333
+  David      0.0000
+  Eve        0.0000
+  Frank      0.0000
+  Grace      0.0000
+  Henry      0.0000
+
+[4] SHORTEST PATHS BETWEEN ALL USER PAIRS
+  Alice <-> Bob : 1 hop(s)  [Alice -> Bob]
+  Alice <-> Charlie : 1 hop(s)  [Alice -> Charlie]
+  Alice <-> David : 1 hop(s)  [Alice -> David]
+  Alice <-> Eve : 2 hop(s)  [Alice -> Bob -> Eve]
+  Alice <-> Frank : 2 hop(s)  [Alice -> Charlie -> Frank]
+  Alice <-> Grace : 2 hop(s)  [Alice -> David -> Grace]
+  Alice <-> Henry : 3 hop(s)  [Alice -> Bob -> Eve -> Henry]
+  Bob <-> Charlie : 1 hop(s)  [Bob -> Charlie]
+  Bob <-> David : 2 hop(s)  [Bob -> Alice -> David]
+  Bob <-> Eve : 1 hop(s)  [Bob -> Eve]
+  Bob <-> Frank : 2 hop(s)  [Bob -> Charlie -> Frank]
+  Bob <-> Grace : 3 hop(s)  [Bob -> Alice -> David -> Grace]
+  Bob <-> Henry : 2 hop(s)  [Bob -> Eve -> Henry]
+  Charlie <-> David : 2 hop(s)  [Charlie -> Alice -> David]
+  Charlie <-> Eve : 2 hop(s)  [Charlie -> Bob -> Eve]
+  Charlie <-> Frank : 1 hop(s)  [Charlie -> Frank]
+  Charlie <-> Grace : 3 hop(s)  [Charlie -> Alice -> David -> Grace]
+  Charlie <-> Henry : 3 hop(s)  [Charlie -> Bob -> Eve -> Henry]
+  David <-> Eve : 2 hop(s)  [David -> Frank -> Eve]
+  David <-> Frank : 1 hop(s)  [David -> Frank]
+  David <-> Grace : 1 hop(s)  [David -> Grace]
+  David <-> Henry : 2 hop(s)  [David -> Grace -> Henry]
+  Eve <-> Frank : 1 hop(s)  [Eve -> Frank]
+  Eve <-> Grace : 2 hop(s)  [Eve -> Henry -> Grace]
+  Eve <-> Henry : 1 hop(s)  [Eve -> Henry]
+  Frank <-> Grace : 2 hop(s)  [Frank -> David -> Grace]
+  Frank <-> Henry : 2 hop(s)  [Frank -> Eve -> Henry]
+  Grace <-> Henry : 1 hop(s)  [Grace -> Henry]
+
+[5] COMMUNITY DETECTION (Natural Groups)
+  Group 1: David, Eve, Frank, Grace, Henry
+  Group 2: Alice, Bob, Charlie
+
+[6] FRIEND RECOMMENDATIONS
+  Alice      -> Frank (2 mutual), Eve (1 mutual)
+  Bob        -> Frank (2 mutual), David (1 mutual)
+  Charlie    -> Eve (2 mutual), David (2 mutual)
+  David      -> Charlie (2 mutual), Henry (1 mutual)
+  Eve        -> Charlie (2 mutual), Alice (1 mutual)
+  Frank      -> Alice (2 mutual), Bob (2 mutual)
+  Grace      -> Eve (1 mutual), Alice (1 mutual)
+  Henry      -> David (1 mutual), Bob (1 mutual)
+
+============================================================
+END OF REPORT
+============================================================
